@@ -63,7 +63,7 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "baseHref": "/personal-website/",
+              
               "buildTarget": "personal-website:build:production"
             },
             "development": {
@@ -99,7 +99,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options":{
+           "baseHref":"https://haoxin-wang.github.io/PersonalWebsiteExample/"
+            }
         }
       }
     }
